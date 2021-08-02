@@ -4,7 +4,7 @@
     padding: 0 ;
 }
 .logo{
-    height: 45px;
+    height: 44px;
 }
 .navbar{
     background-color: #423e92;
@@ -39,7 +39,10 @@ li{
 .dropitem{
     font-size: 12px;
 }
-
+.box {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
 .sitting{
     width: 550px;
 }
@@ -60,6 +63,9 @@ li{
 }
 .fast{
     color: #423e92;
+}
+.comment{
+    color: #fff ;
 }
 .google {
     width: 11rem;
@@ -86,10 +92,10 @@ li{
 
 .card{
     border: none;
-    box-shadow: 0 3px 10px #d2d0f0;
+    box-shadow: 0 3px 10px #d2d0f06c;
 }
 .card-img{
-    width: 19rem; 
+    width: 18rem; 
     margin-left: 2rem;
 }
 .btn-send{
@@ -125,7 +131,7 @@ li{
 }
 
 .search-btn{
-    width: 7.5rem;
+    width: 7rem;
     height: 2.6rem;
     background-color: #f3b58c;
     border-radius: 1.2rem;
@@ -142,7 +148,7 @@ li{
 
 .search-input{
     height: 2.6rem;
-    width: 20rem;
+    width: 19rem;
     outline: none;
     border: none;
     font-family: 'Montserrat', sans-serif;
@@ -207,9 +213,53 @@ li{
     .navbar  {
         padding: 10px !important;
     }
+    .Navbar-1{
+        display: none;
+    }
     .px-5 {
         padding: 7px !important;
     }
+
+    /* Navbar 2 */
+    .Navbar2{
+        background-color: #423e92 !important;
+    }
+    .mainbox{
+        font-size: 24px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .sidemenu{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 0px;
+        background-image: linear-gradient(0deg, black, #423e92);
+        z-index: 1;
+        padding-top: 50px;
+        overflow-x: hidden;
+        transition: all 0.3s;
+    }
+    .sidemenu a{
+        text-decoration: none;
+        display: block;
+    }
+    .sidemenu a:hover{
+        background-color: rgba(255, 255, 255, 0.171);
+        border-radius: 2px;
+        padding-left: 5px;
+    }
+    .closebtn{
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        font-size: 36px;
+        margin-right: 32px;
+
+    }
+
+
     .first-footer {
         height: max-content;
         text-align: center;
@@ -279,5 +329,15 @@ li{
     }
     .verify-booking {
         padding-top: 7rem !important;
+    }
+    .box {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .second-sec{
+        margin-top: 5rem;
+    }
+    .Navbar-1{
+        /* display: none; */
     }
 }

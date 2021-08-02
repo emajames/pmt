@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <main>
 
+   <div class="Navbar-1">
     <nav class="navbar navbar-expand-sm sticky-top navbar-light py-3">
       <div class="container-fluid px-5">
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -41,7 +42,6 @@
                 <span><i class="far fa-bus-school pr-1 icons"></i></span> PMT</a>
 
               <div class="dropdown-menu dropitem" aria-labelledby="dropdownId">
-                <div><i class="fas fa-caret-up"></i></div>
                 <a class="dropdown-item mb-3" href="#"> <span><i
                       class="far fa-newspaper rotate 90 pr-1 icons"></i></span> Booking</a>
                 <a class="dropdown-item mb-3" href="#"> <span class="mr-2"><i class="far fa-search"></i></span>
@@ -119,6 +119,94 @@
           </ul>
         </div>
     </nav>
+   </div>
+
+
+   <!-- Navbar 2 -->
+   <div class="d-md-none">
+    <nav class="navbar fixed-top navbar-light py-3">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img class="logo" src="Images/logo.png" alt="">
+          <span class="pmt pl-3 text-white">PMT</span>
+        </a>
+        <div id="mainbox" class="mainbox"  onclick="openFunction()" style="color: white;">&#9776;</div>
+        <div class="sidemenu" id="menu">
+          <ul class="navbar-nav m-4 ">
+            <li class="nav-item active pr-3 ">
+              <a class="nav-link text-white nav-as " href="#"><span class="fa fa-home pr-1 icons"
+                  aria-hidden="true"></i></span>HOME</a>
+            </li>
+
+            <li class="nav-item dropdown pr-3">
+              <a class="nav-link dropdown-toggle text-white nav-as" href="#" id="dropdownId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span><i class="far fa-bus-school pr-1 icons"></i></span> PMT</a>
+
+              <div class="dropdown-menu dropitem bg-transparent" aria-labelledby="dropdownId">
+                <a class="dropdown-item mb-3 text-white" href="#"> <span><i class="far fa-newspaper rotate 90 pr-1 icons"></i></span> Booking</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-search"></i></span> Verifying Booking</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="fal fa-calendar"></i></span> Travel  History</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-university"></i></span>  Terminals</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-user"></i></span> PMT  Agents</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown pr-3">
+              <a class="nav-link dropdown-toggle text-white nav-as" href="#" id="dropdownId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span><i class="far fa-shipping-fast pr-1 icons"></i></span> LOGISTICS</a>
+              <div class="dropdown-menu dropitem bg-transparent" aria-labelledby="dropdownId">
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="fal fa-box-alt"></i></span> Pickup</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-search"></i></span>Traveling</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-shipping-fast pr-1 icons"></i></span>Shipments</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-university"></i></span>Terminals</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-user"></i></span> Agents</a>
+                <a class="dropdown-item mb-3 text-white" href="#"> <span class="mr-2"><i class="far fa-user"></i></span>Persons</a>
+              </div>
+            </li>
+
+            <li class="nav-item active pr-3">
+              <a class="nav-link text-white nav-as" href="#"> <span><i
+                class="far fa-shopping-cart pr-1 icons"></i></span> SHOP</a>
+            </li>
+
+            <li class="nav-item active pr-3">
+              <a class="nav-link text-white nav-as" href="#"><span><i class="fa fa-laptop pr-1 icons"aria-hidden="true"></i></span>TECH</a>
+            </li>
+
+            <li class="nav-item dropdown pr-3">
+              <a class="nav-link dropdown-toggle text-white nav-as" href="#" id="dropdownId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-newspaper rotate 90 pr-1 icons"></i> ABOUT</a>
+              <div class="dropdown-menu dropitem bg-transparent" aria-labelledby="dropdownId">
+                <a class="dropdown-item text-white" href="#"> <span class="mr-2"><i class="fal fa-book-alt"></i></span> ABOUT US</a>
+                <a class="dropdown-item text-white" href="#"> <span class="mr-2"><i class="fal fa-comment"></i></span> FAQ</a>
+              </div>
+            </li>
+
+            <li class="nav-item active pr-3">
+              <a class="nav-link text-white nav-as" href="#"> <span><i class="far fa-list-ul pr-1 icons"></i></span> BLOG</a>
+            </li>
+            <li class="nav-item active pr-3">
+              <a class="nav-link text-white nav-as" href="#"> <span><i class="far fa-paper-plane pr-1 icons"></i></span> CONTACT US</a>
+            </li>
+
+            <li class="nav-item dropdown pr-3">
+              <a class="nav-link dropdown-toggle text-white round about" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span><i class="far fa-user-circle pr-1 pt-1 icons"></i></span> ACCOUNT</a>
+                <div class="dropdown-menu dropitem bg-transparent" aria-labelledby="dropdownId">
+                <a class="dropdown-item text-white" href="#"> <span class="mr-2"><i class="fas fa-sign-in-alt"></i></span>Login</a>
+                <a class="dropdown-item text-white" href="#"> <span class="mr-2"><i class="far fa-user-plus"></i></span>Register</a>
+              </div>
+            </li>
+          </ul>
+          <a href="" class="closebtn" style="text-decoration: none; color: white;" onclick="closeFunction()">&times;</a>
+        </div>
+    </nav>
+   </div>
+
+
     <!-- end of nav -->
 
     <div class="container-fluid px-5">
@@ -147,8 +235,8 @@
       <div class="text-center">
         <h1 class="what">What We Do</h1>
       </div>
-      <div class="d-md-flex mt-5 mb-2">
-        <div class="card mb-2" style="width: 24rem;">
+      <div class="d-md-flex mt-5 mb-2 justify-content-between box">
+        <div class="card mb-2" style="width: 23rem;">
           <img class="card-img-top card-img  mt-3" src="/Images/Bike For Box.png" alt="">
           <div class="card-body text-center">
             <h5>PMT - Logistics</h5>
@@ -157,7 +245,7 @@
                 class="far fa-shipping-fast pr-1 icons"></i>Send Your Goods</a>
           </div>
         </div>
-        <div class="card ml-5 mb-2" style="width: 24rem;">
+        <div class="card ml-5 mb-2" style="width: 23rem;">
           <img class="card-img-top card-img  mt-3" src="/Images/pmt transit.png" alt="">
           <div class="card-body text-center">
             <h5 class="">PMT - Transport</h5>
@@ -166,7 +254,7 @@
                 class="far fa-bus-school pr-1 icons"></i>Book Now</a>
           </div>
         </div>
-        <div class="card ml-5 mb-2" style="width: 24rem;">
+        <div class="card ml-5 mb-2" style="width: 23rem;">
           <img class="card-img-top card-img mt-3" src="/Images/pmt e-commerce banner 1.png" alt="">
           <div class="card-body text-center">
             <h5>PMT - E-Commerce</h5>
@@ -180,7 +268,7 @@
     <!-- end of cards -->
 
 
-    <div class="third-sec d-md-flex">
+    <div class="third-sec d-md-flex box">
       <div class="section-3 text-center d-md-flex justify-content-between px-5">
         <div>
           <h3 class="text-white verify-booking">Verify Booking</h3>
@@ -208,7 +296,7 @@
       <div class="text-center">
         <h1 class="what">PMT Products</h1>
       </div>
-      <div class="d-md-flex mt-5 mb-2">
+      <div class="d-md-flex mt-5 mb-2 box">
         <div class="card mb-2" style="width: 24rem;">
           <img class="card-img-top card-img2  mt-3" src="/Images/pmt p box.png" alt="">
           <div class="card-body text-center">
@@ -404,6 +492,29 @@
       </div>
     </div>
     </div>
+
+
+     <!-- Chart Section -->
+     <div class="fixed-bottom" style="bottom: 2rem; right: 1rem;">
+      <div class="position-relative float-right">
+       <div class="">
+         <img src="/Images/168-r-br.svg" alt="" width="120px">
+       </div>
+       <div class="position-absolute" style="top: 1.5rem; left: 5rem; z-index: 2;">
+         <a class="bg-danger rounded-circle text-white" style="font-size: small; padding:4px 7px;" href="">1</a>
+       </div> 
+       <div class="position-absolute rounded-circle" style=" padding: 1rem; top: 1.7rem; left: 2.3rem; background-color: #f4843a;">
+        <i class="fas fa-comment comment fa-2x" aria-hidden="true"></i>
+          
+       </div>
+     </div>
+   </div>
+
+ </div>
+
+</div>
+
+
   </main>
 
   <!-- Optional JavaScript -->
